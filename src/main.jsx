@@ -5,18 +5,23 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const colors = {
   brand: {
-    900: "#1a365d",
-    800: "#153e75",
-    700: "#2a69ac",
+    900: "#6f42c1",
+    800: "#007bff",
+    700: "#ef8172",
+    600: "#ff4c68",
   },
 };
 
-const theme = extendTheme({ colors });
+const fonts = {
+  body: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
+};
+
+const theme = extendTheme({ colors, fonts });
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       <App />
     </ChakraProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
