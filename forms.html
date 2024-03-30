@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Geração de Laudos Radiológicos</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Custom CSS for styling to match the dark theme -->
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .form-container {
+        background-color: #000;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+      .custom-logo {
+        background: url("https://i.ibb.co/1YVXjS8/natan-paraisk-The-logo-consists-of-abstract-shaped-forms-spelli-5c438335-6115-47fb-98ce-c9d0b5907cca.webp") center no-repeat;
+        background-size: cover;
+        height: 150px;
+        width: 100%;
+      }
+      .btn-custom {
+        background-color: #17a2b8;
+        border: none;
+        color: white;
+      }
+      .btn-custom:hover {
+        background-color: #138496;
+      }
+
+      .form-control,
+      .form-control:focus {
+        background-color: #000;
+        border: 2px solid #fff;
+        color: #fff;
+        box-shadow: none;
+      }
+      .form-control::placeholder {
+        color: #bbb;
+      }
+
+      .neon-text {
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          0 0 42px #0fa,
+          0 0 82px #0fa,
+          0 0 92px #0fa,
+          0 0 102px #0fa,
+          0 0 151px #0fa;
+      }
+
+      .form-check-input:checked {
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+      }
+      .form-check-label {
+        color: #fff;
+      }
+      .form-label {
+        color: #bbb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="custom-logo"></div>
+      <div class="form-container neon-text">
+        <h1 class="text-center mb-4">Formulário de Geração de Laudos Radiológicos</h1>
+        <!-- Form content with neon effect -->
+        <form>
+          <!-- All form fields with IDs as requested -->
+          <div class="form-group">
+            <label for="tipoExame" class="form-label">Tipo de Exame</label>
+            <input type="text" class="form-control" id="tipoExame" placeholder="Digite o tipo de exame" />
+          </div>
+          <div class="form-group">
+            <label for="regiaoAnatomica" class="form-label">Região Anatômica</label>
+            <input type="text" class="form-control" id="regiaoAnatomica" placeholder="Informe a região anatômica do exame" />
+          </div>
+          <div class="form-group">
+            <label for="tecnica" class="form-label">Técnica</label>
+            <textarea class="form-control" id="tecnica" rows="3" placeholder="Descreva a técnica utilizada"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="achados" class="form-label">Achados</label>
+            <textarea class="form-control" id="achados" rows="3" placeholder="Descreva os achados do exame"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="impressaoDiagnostica" class="form-label">Impressão Diagnóstica</label>
+            <textarea class="form-control" id="impressaoDiagnostica" rows="3" placeholder="Informe a impressão diagnóstica"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="recomendacoes" class="form-label">Recomendações (opcional)</label>
+            <textarea class="form-control" id="recomendacoes" rows="3" placeholder="Adicione recomendações se necessário"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="limitacoesTecnicas" class="form-label">Limitações Técnicas (opcional)</label>
+            <textarea class="form-control" id="limitacoesTecnicas" rows="3" placeholder="Descreva as limitações técnicas, se houver"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="achadosAdicionais" class="form-label">Achados Adicionais (opcional)</label>
+            <textarea class="form-control" id="achadosAdicionais" rows="3" placeholder="Informe achados adicionais"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="comparacaoExames" id="comComparacao" value="comComparacao" />
+              <label class="form-check-label" for="comComparacao">Com comparação</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="comparacaoExames" id="semComparacao" value="semComparacao" />
+              <label class="form-check-label" for="semComparacao">Sem comparação</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-custom mt-4">Gerar Laudo</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

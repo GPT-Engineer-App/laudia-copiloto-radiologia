@@ -29,7 +29,7 @@ const Index = () => {
           <Text fontSize="xl" mb={8}>
             LaudIA é o seu copiloto de IA para relatórios radiológicos. Experimente uma eficiência e precisão incomparáveis.
           </Text>
-          <Button colorScheme="white" size="lg">
+          <Button as="a" href="forms.html" colorScheme="white" size="lg">
             Começar Agora
           </Button>
         </Container>
@@ -122,9 +122,9 @@ const Index = () => {
                 <ListItem>Análise básica de IA</ListItem>
                 <ListItem>Suporte por e-mail</ListItem>
               </List>
-              <Button colorScheme="purple" size="lg">
+              <Link href="forms.html" colorScheme="purple" size="lg">
                 Assinar
-              </Button>
+              </Link>
             </Box>
             <Box borderWidth={1} borderRadius="lg" p={6} textAlign="center" mb={{ base: 8, md: 0 }} mr={{ md: 4 }}>
               <Heading as="h3" size="lg" mb={4}>
@@ -141,9 +141,9 @@ const Index = () => {
                 <ListItem>Análise avançada de IA</ListItem>
                 <ListItem>Suporte prioritário por e-mail</ListItem>
               </List>
-              <Button colorScheme="purple" size="lg">
+              <Link href="forms.html" colorScheme="purple" size="lg">
                 Assinar
-              </Button>
+              </Link>
             </Box>
             <Box borderWidth={1} borderRadius="lg" p={6} textAlign="center">
               <Heading as="h3" size="lg" mb={4}>
@@ -157,9 +157,9 @@ const Index = () => {
                 <ListItem>Modelos dedicados de IA</ListItem>
                 <ListItem>Suporte premium</ListItem>
               </List>
-              <Button colorScheme="purple" size="lg">
+              <Link href="forms.html" colorScheme="purple" size="lg">
                 Entre em Contato
-              </Button>
+              </Link>
             </Box>
           </Flex>
         </Container>
